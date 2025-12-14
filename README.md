@@ -114,3 +114,11 @@ Update dataset paths in the code:
 train_path = 'path_to_train_dataset'
 test_path = 'path_to_test_dataset'
 ```
+---
+
+## Flask App Output
+
+Below is the output screen of the Flask web application used for melanoma detection:
+
+![Flask App Output](Flask_output.png)
+
