@@ -107,15 +107,19 @@ model = keras.models.load_model('model.keras')
 Install dependencies:
 ```python 
 pip install tensorflow numpy pandas matplotlib seaborn scikit-learn
-
 ```
 Update dataset paths in the code:
 ```python 
 train_path = 'path_to_train_dataset'
 test_path = 'path_to_test_dataset'
 ```
----
+Run the all the cells jupyter notebook
 
+run 
+```python 
+python app.py
+```
+---
 ## Flask App Output
 
 Below is the output screen of the Flask web application used for melanoma detection:
