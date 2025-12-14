@@ -10,7 +10,7 @@ Melanoma is one of the most dangerous types of skin cancer. Early detection play
 This project aims to automatically classify skin lesion images into two categories:
 
 - Melanoma (Positive)
-- Non-Melanoma (Negative)
+- Benign (Negative)
 
 The project includes image preprocessing, data augmentation, CNN model training, evaluation, and visualization.
 
@@ -21,14 +21,12 @@ The project includes image preprocessing, data augmentation, CNN model training,
 The dataset must be organized in the following format:
 
 melanoma_cancer_dataset/
-│
-├── train/
-│ ├── class_0/
-│ └── class_1/
-│
-└── test/
-├── class_0/
-└── class_1/
+      train/
+          - class_0/
+          - class_1/
+      test/
+          - class_0/
+          - class_1/
 
 Each class folder should contain corresponding image files.
 
@@ -102,20 +100,17 @@ You can load it later using:
 ```python
 from tensorflow import keras
 model = keras.models.load_model('model.keras')
+```
 ---
 ## How to Run the Project
 
 Install dependencies:
-
+```python 
 pip install tensorflow numpy pandas matplotlib seaborn scikit-learn
 
-
+```
 Update dataset paths in the code:
-
+```python 
 train_path = 'path_to_train_dataset'
 test_path = 'path_to_test_dataset'
-
-
-Run the Python script:
-
-python cnn_melanoma_detection.py
+```
